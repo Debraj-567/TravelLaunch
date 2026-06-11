@@ -1,6 +1,6 @@
 import React from 'react';
 import { Badge } from './Badge';
-import type { BadgeProps } from '../../types/components';
+import type { BadgeProps } from './Badge';
 
 interface StatusBadgeProps {
   label: string;

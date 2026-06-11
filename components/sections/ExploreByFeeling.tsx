@@ -59,7 +59,7 @@ export const ExploreByFeeling = () => {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: import('framer-motion').Variants = {
     hidden: { opacity: 0, y: 40 },
     visible: {
       opacity: 1,

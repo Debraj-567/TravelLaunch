@@ -3,7 +3,7 @@ import type { HTMLAttributes } from "react";
 import { cn } from "./ui.utils";
 
 export interface BadgeProps extends HTMLAttributes<HTMLDivElement> {
-  variant?: "default" | "success" | "warning" | "error" | "info" | "neutral";
+  variant?: "default" | "success" | "warning" | "error" | "info" | "neutral" | "gold" | "sage" | "onyx";
 }
 
 const Badge = forwardRef<HTMLDivElement, BadgeProps>(
@@ -15,6 +15,9 @@ const Badge = forwardRef<HTMLDivElement, BadgeProps>(
       success: "bg-emerald-100 text-emerald-800 border-emerald-200 dark:bg-emerald-900/30 dark:text-emerald-400 dark:border-emerald-800",
       warning: "bg-amber-100 text-amber-800 border-amber-200 dark:bg-amber-900/30 dark:text-amber-400 dark:border-amber-800",
       error: "bg-red-100 text-red-800 border-red-200 dark:bg-red-900/30 dark:text-red-400 dark:border-red-800",
+      gold: "bg-gold/10 text-gold border-gold/20",
+      sage: "bg-sage/10 text-sage border-sage/20",
+      onyx: "bg-onyx/10 text-onyx border-onyx/20",
     };
 
     return (
