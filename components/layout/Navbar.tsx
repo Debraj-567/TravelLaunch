@@ -6,8 +6,8 @@ import { Menu, X } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 const NAV_LINKS = [
-  { name: 'Destinations', href: '#' },
-  { name: 'Experiences', href: '#' },
+  { name: 'Destinations', href: '/destinations' },
+  { name: 'Experiences', href: '/experiences' },
   { name: 'Stories', href: '#' },
   { name: 'About', href: '#' },
 ];

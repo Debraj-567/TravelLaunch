@@ -13,10 +13,10 @@ const FOOTER_LINKS = {
 };
 
 const FOOTER_COLUMNS = [
-  { title: "Destinations", links: FOOTER_LINKS.destinations },
-  { title: "Experiences", links: FOOTER_LINKS.experiences },
-  { title: "Company", links: FOOTER_LINKS.company },
-  { title: "Support", links: FOOTER_LINKS.support },
+  { title: "Destinations", links: FOOTER_LINKS.destinations, href: "/destinations" },
+  { title: "Experiences", links: FOOTER_LINKS.experiences, href: "/experiences" },
+  { title: "Company", links: FOOTER_LINKS.company, href: "#" },
+  { title: "Support", links: FOOTER_LINKS.support, href: "#" },
 ];
 
 export const Footer = () => {
@@ -79,12 +79,12 @@ export const Footer = () => {
             {FOOTER_COLUMNS.map((column) => (
               <div key={column.title}>
                 <h4 className="mb-6 text-[13px] font-black uppercase tracking-[0.28em] text-onyx">
-                  {column.title}
+                  <a href={column.href} className="hover:text-gold transition-colors">{column.title}</a>
                 </h4>
                 <ul className="space-y-4">
                   {column.links.map(link => (
                     <li key={link}>
-                      <a href="#" className="text-base font-body text-text-muted transition-colors hover:text-gold">
+                      <a href={column.href} className="text-base font-body text-text-muted transition-colors hover:text-gold">
                         {link}
                       </a>
                     </li>

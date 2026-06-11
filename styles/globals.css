@@ -5,14 +5,17 @@
   --font-display: 'Cormorant Garamond', serif;
   --font-body: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
+  --font-label: 'Space Mono', monospace;
   
   --color-onyx: #0A0A0A;
+  --color-cream: #F5F0E8;
   --color-gold: #C9A96E;
   --color-sage: #4A6741;
   --color-sky: #E8F4FD;
   --color-warm-white: #FAFAF8;
   --color-text-primary: #1A1A1A;
   --color-text-muted: #6B6B6B;
+  --color-border-subtle: #2E2E2E;
 
   --color-border: hsl(var(--border));
   --color-input: hsl(var(--input));
