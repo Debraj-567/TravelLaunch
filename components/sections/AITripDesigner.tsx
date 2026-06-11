@@ -123,14 +123,17 @@ export const AITripDesigner = () => {
               <Button 
                 onClick={handleDesign}
                 disabled={isDesigning}
-                className="w-full bg-onyx text-warmWhite font-display italic text-2xl py-10 rounded-2xl shadow-[0_30px_60px_rgba(10,10,10,0.15)] hover:scale-[1.02] transition-transform"
+                className="w-full bg-gold text-onyx font-display italic text-2xl py-10 rounded-2xl shadow-[0_20px_50px_rgba(201,169,110,0.3)] hover:scale-[1.02] hover:shadow-[0_25px_60px_rgba(201,169,110,0.45)] transition-all duration-500 relative overflow-hidden group"
               >
+                {/* Golden Animated Shimmer */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none" />
+                
                 {isDesigning ? (
-                  <span className="flex items-center gap-4">
+                  <span className="flex items-center gap-4 relative z-10">
                     <Loader2 className="animate-spin" size={24} /> GENESIS IN PROGRESS...
                   </span>
                 ) : (
-                  <span className="flex items-center gap-4">
+                  <span className="flex items-center gap-4 relative z-10">
                     DESIGN MY JOURNEY <Sparkles size={24} />
                   </span>
                 )}
@@ -186,7 +189,7 @@ export const AITripDesigner = () => {
                     </div>
                     <div>
                       <span className="text-[12px] uppercase tracking-[0.8em] text-gold font-black block mb-4">Discovery Engine Active</span>
-                      <p className="text-onyx/30 font-display italic text-lg italic">Awaiting your coordinates to begin the synthesis</p>
+                      <p className="text-onyx/30 font-display italic text-lg">Awaiting your coordinates to begin the synthesis</p>
                     </div>
                   </div>
                 </motion.div>
@@ -272,9 +275,12 @@ export const AITripDesigner = () => {
                   <div className="mt-16 pt-12">
                     <Button 
                       onClick={() => window.location.href = '/dashboard'}
-                      className="w-full bg-onyx text-warmWhite hover:bg-gold hover:text-onyx transition-all duration-700 py-10 rounded-2xl flex items-center justify-center gap-4 group text-2xl font-display italic"
+                      className="w-full bg-gold text-onyx hover:scale-[1.02] transition-all duration-700 py-10 rounded-2xl flex items-center justify-center gap-4 group text-2xl font-display italic shadow-[0_20px_50px_rgba(201,169,110,0.3)] hover:shadow-[0_25px_60px_rgba(201,169,110,0.45)] relative overflow-hidden"
                     >
-                      Commence This Journey <ChevronRight size={24} className="group-hover:translate-x-2 transition-transform" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] pointer-events-none" />
+                      <span className="relative z-10 flex items-center gap-4">
+                        Commence This Journey <ChevronRight size={24} className="group-hover:translate-x-2 transition-transform" />
+                      </span>
                     </Button>
                   </div>
                 </motion.div>
