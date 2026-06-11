@@ -1,0 +1,19 @@
+:root {
+  /* Colors */
+  --primary-onyx: #0A0A0A;
+  --accent-gold: #C9A96E;
+  --sage-green: #4A6741;
+  --sky-blue: #E8F4FD;
+  --warm-white: #FAFAF8;
+  
+  --text-primary: #1A1A1A;
+  --text-muted: #6B6B6B;
+
+  /* Typography */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Transitions */
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+}
