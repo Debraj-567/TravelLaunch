@@ -106,7 +106,7 @@ export const PopularDestinations = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity" />
                 
-                <div className="absolute top-6 left-6 flex items-center gap-1 bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 text-white text-sm font-bold">
+                <div className="absolute top-6 right-6 flex items-center gap-1 bg-white/20 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 text-white text-sm font-bold z-10">
                   <Star size={14} className="fill-yellow-400 text-yellow-400" />
                   {dest.rating}
                 </div>

@@ -10,7 +10,7 @@ const INDIAN = [
   { name: "Manali", category: "Adventure", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=800" },
   { name: "Leh", category: "Road Trip", image: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?auto=format&fit=crop&q=80&w=800" },
   { name: "Kerala", category: "Backwaters", image: "https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&q=80&w=800" },
-  { name: "Andaman", category: "Islands", image: "https://images.unsplash.com/photo-1534346589587-9b4b748d55ce?auto=format&fit=crop&q=80&w=800" },
+  { name: "Andaman", category: "Islands", image: "https://plus.unsplash.com/premium_photo-1697729600772-2432650882e3?q=80&w=1000&auto=format&fit=crop" },
   { name: "Darjeeling", category: "Tea Gardens", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&q=80&w=800" },
   { name: "Rajasthan", category: "Heritage", image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=800" },
 ];
