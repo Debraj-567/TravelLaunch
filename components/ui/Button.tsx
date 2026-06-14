@@ -7,7 +7,7 @@ function cn(...inputs: ClassValue[]) {
 }
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'outline' | 'ghost';
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
 }
 
@@ -19,33 +19,32 @@ export const Button = ({
   ...props 
 }: ButtonProps) => {
   const variants = {
-    primary: 'bg-onyx text-warmWhite hover:bg-opacity-90 relative overflow-hidden group/btn',
-    outline: 'border border-gold text-gold hover:bg-gold hover:text-onyx rounded-full transition-all duration-500 relative overflow-hidden group/btn',
-    ghost: 'text-onyx hover:bg-black/5 relative overflow-hidden group/btn',
+    primary: 'bg-blue-600 text-white hover:bg-blue-700 shadow-md hover:shadow-lg',
+    secondary: 'bg-slate-900 text-white hover:bg-black shadow-md',
+    outline: 'border border-slate-200 text-slate-900 hover:bg-slate-50',
+    ghost: 'text-slate-600 hover:bg-slate-100 hover:text-slate-900',
   };
 
   const sizes = {
-    sm: 'px-4 py-2 text-sm',
-    md: 'px-6 py-3 text-base',
-    lg: 'px-8 py-4 text-lg uppercase tracking-[0.2em] font-display italic',
+    sm: 'px-4 py-2 text-sm rounded-lg',
+    md: 'px-6 py-3 text-base rounded-xl',
+    lg: 'px-8 py-4 text-lg font-bold rounded-2xl',
   };
 
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center transition-all duration-300 font-medium disabled:opacity-50 disabled:pointer-events-none active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2',
+        'inline-flex items-center justify-center transition-all duration-200 font-semibold disabled:opacity-50 disabled:pointer-events-none active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2',
         variants[variant],
         sizes[size],
         className
       )}
       {...props}
     >
-      <span className="relative z-10 flex items-center gap-2">
+      <span className="flex items-center gap-2">
         {children}
       </span>
-      
-      {/* Gold Shimmer Sweep Animation */}
-      <span className="absolute inset-0 -translate-x-full group-hover/btn:animate-[shimmer-sweep_0.6s_ease-in-out] bg-gradient-to-r from-transparent via-gold/30 to-transparent pointer-events-none" />
     </button>
   );
 };
+
